@@ -1,0 +1,13 @@
+#
+# Test Module configuration
+#
+
+menu "Test Module"
+
+config TEST_MODULE
+	tristate "Stallion EasyIO or EC8/32 support"
+	help
+	    This module is to test compilation of the module inside the kernel source tree
+
+endmenu
+
