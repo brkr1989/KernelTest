@@ -1,6 +1,8 @@
 #include <linux/init.h>
 #include <linux/module.h>
 MODULE_LICENSE("Dual BSD/GPL");
+MODULE_AUTHOR("Bharath Rao");
+MODULE_DESCRIPTION("A simple hello world kernel module");
 
 static int hello_init( void )
 {
