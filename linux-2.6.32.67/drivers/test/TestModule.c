@@ -4,13 +4,13 @@ MODULE_LICENSE("Dual BSD/GPL");
 MODULE_AUTHOR("Bharath Rao");
 MODULE_DESCRIPTION("A simple hello world kernel module");
 
-static int hello_init( void )
+static int __init hello_init( void )
 {
 	printk(KERN_ALERT "Hello, Kernel world\n");
 	return 0;
 }
 
-static void hello_exit( void )
+static void __exit hello_exit( void )
 {
 	printk(KERN_ALERT "GoodBye, Kernel world\n");
 }
